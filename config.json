@@ -24,7 +24,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/kekz-vpn"
+          "path": "/kekzvpn"
         },
         "sockopt": {
           "tcpFastOpen": true,
