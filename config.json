@@ -1,0 +1,54 @@
+{
+  "log": {
+    "loglevel": "none"
+  },
+  "dns": {
+    "servers": [
+      "223.5.5.5",
+      "223.6.6.6"
+    ],
+    "strategy": "UseIPv4",
+    "disableCache": false,
+    "disableFallback": false
+  },
+  "inbounds": [
+    {
+      "port": 10000,
+      "listen": "127.0.0.1",
+      "protocol": "trojan",
+      "tag": "trojan-ws",
+      "settings": {
+        "clients": [
+          {
+            "password": "kekzvpn"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "\/kekz-vpn"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15
+        }
+      }
+    },
+    {
+      "port": 10001,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "tag": "vless-ws",
+      "settings": {
+        "clients": [
+          {
+            "id": "kekzvpn",
+            "level": 0
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
