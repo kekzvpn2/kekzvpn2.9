@@ -2,8 +2,8 @@ version: "3.8"
 ‎
 ‎services:
 ‎  aetherx:
-‎    image: :kekzvpn2/kekzvpn2.9:latest
-‎    container_name: kekzvpn
+‎    image: :kekz1/kekezvpn:latest
+‎    container_name: kekz1
 ‎    network_mode: host
 ‎    restart: always
 ‎    pull_policy: always
