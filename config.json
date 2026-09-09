@@ -40,7 +40,7 @@
       "port": 10001,
       "listen": "127.0.0.1",
       "protocol": "vless",
-      "tag": "vless-ws",
+      "tag": "kekz-vpn",
       "settings": {
         "clients": [
           {
