@@ -17,7 +17,7 @@
       "settings": {
         "clients": [
           {
-            "password": "kekzvpn2.9"
+            "password": "kekzvpn"
           }
         ]
       },
@@ -41,7 +41,7 @@
       "settings": {
         "clients": [
           {
-            "id": "kekzvpn2.9",
+            "id": "kekzvpn",
             "level": 0
           }
         ],
