@@ -19,14 +19,14 @@ static_resources:
               routes:
               
               - match:
-                  prefix: "/kekz-vpn"
+                  prefix: "/kekzvpn"
                 route:
                   cluster: xray_trojan
                   upgrade_configs:
                   - upgrade_type: websocket
               
               - match:
-                  prefix: "/kekz-vpn"
+                  prefix: "/kekzvpn"
                 route:
                   cluster: xray_vless
                   upgrade_configs:
